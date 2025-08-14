@@ -11,8 +11,8 @@ with open("model.pkl", "rb") as f:
 st.title("Employee Retaintion")
 
 # user input
-satisfaction_level = st.number_input("satisfaction level", min_value= 0, max_value= 1, format= '%.2f')
-last_evaluation = st.number_input("last evaluation", min_value= 0, max_value= 1, format= '%.2f')
+satisfaction_level = st.number_input("satisfaction level", min_value= 0.0, max_value= 1.0, format= '%.2f')
+last_evaluation = st.number_input("last evaluation", min_value= 0.0, max_value= 1.0, format= '%.2f')
 number_project = st.number_input("number of project", min_value= 0)
 average_monthly_hours = st.number_input("average monthly hours", min_value= 0)
 time_spend_company = st.number_input("time spend company", min_value= 0, max_value= 10)
@@ -36,4 +36,5 @@ if st.button("predict"):
     probablity = model.predict_proba(df)[0][1]
 
     st.success(f"Prediction: {'Retain' if prediction == 1 else 'Left'}")
+
     st.write(f"Left Probability: {probablity:.2%}")
