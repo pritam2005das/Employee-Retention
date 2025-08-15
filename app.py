@@ -33,7 +33,7 @@ if st.button("predict"):
         'salary' : salary
     }])
     prediction = model.predict(df)[0]
-    probablity = model.predict_proba(df)[0][1]
+    probablity = model.predict_proba(df)[0][prediction]
 
     st.success(f"Prediction: {'Retain' if prediction == 0 else 'Left'}")
 
