@@ -35,7 +35,7 @@ if st.button("predict"):
     prediction = model.predict(df)[0]
     probablity = model.predict_proba(df)[0][1]
 
-    st.success(f"Prediction: {'Retain' if prediction == 0 else 'Left'}")
+    st.success(f"Prediction: {'Retain' if prediction == 1 else 'Left'}")
 
     st.write(f"Retain Probability: {probablity:.2%}")
 
