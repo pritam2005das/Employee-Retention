@@ -37,4 +37,5 @@ if st.button("predict"):
 
     st.success(f"Prediction: {'Retain' if prediction == 1 else 'Left'}")
 
-    st.write(f"Left Probability: {probablity:.2%}")
+    st.write(f"Retain Probability: {probablity:.2%}")
+
