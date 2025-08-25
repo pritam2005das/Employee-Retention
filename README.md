@@ -78,15 +78,15 @@ The app provides a simple HR-friendly interface:
 ## 📂 Project Structure
 
 Employee-Retention/
-├── dataset.csv # HR dataset used for model training
-├── model.ipynb # Jupyter Notebook for EDA & model training
-├── model.pkl # Serialized ML model (trained)
-├── app.py # Streamlit app for deployment
-├── requirements.txt # Dependencies for the project
-├── README.md # Documentation
-├── notebooks/ # (Optional) Extra analysis notebooks
-├── saved_models/ # (Optional) Store multiple trained models
-└── screenshots/ # App UI screenshots for README
+├── dataset.csv            # HR dataset used for model training
+├── model.ipynb            # Jupyter Notebook for EDA & model training
+├── model.pkl              # Serialized ML model (trained)
+├── app.py                 # Streamlit app for deployment
+├── requirements.txt       # Dependencies for the project
+├── README.md              # Documentation
+├── notebooks/             # (Optional) Extra analysis notebooks
+├── saved_models/          # (Optional) Store multiple trained models
+└── screenshots/           # App UI screenshots for README
 
 ---
 
