@@ -25,7 +25,7 @@ The primary objective of this project is to:
   - `salary`  
 
 - **Target Variable:**  
-  - `left` (0 = Retain, 1 = Left)
+  - `left` (1 = Retain, 0 = Left)
 
 ---
 
